@@ -4,7 +4,7 @@ Priority: optional
 Maintainer: Debian CMake Team <pkg-cmake-team@lists.alioth.debian.org>
 Uploaders: Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>,
            Felix Geyer <fgeyer@debian.org>
-Build-Depends: debhelper (>= 10~),
+Build-Depends: debhelper (>= 8),
                freebsd-glue [kfreebsd-any],
                libarchive-dev (>= 2.8.0),
                libbz2-dev,
@@ -14,7 +14,7 @@ Build-Depends: debhelper (>= 10~),
                liblzma-dev,
                libncurses5-dev,
                librhash-dev,
-               libuv1-dev (>= 1.10),
+               libuv1-dev (>= 1.8),
                procps [!hurd-any],
                python3-sphinx,
                qtbase5-dev <!stage1>,

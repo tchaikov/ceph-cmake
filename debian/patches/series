@@ -1,0 +1,4 @@
+CMakeLists-use-libuv-1.8.diff
+cmArchiveWrite-drop-zstd.diff
+cmGetPipes-go-without-uv_translate_sys_error.diff
+Test-CommandLineTar-disable-pax-zstd.diff

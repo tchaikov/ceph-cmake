@@ -1,0 +1,12 @@
+diff --git a/Tests/RunCMake/CommandLineTar/RunCMakeTest.cmake b/Tests/RunCMake/CommandLineTar/RunCMakeTest.cmake
+index a64af95247..4d1b3966eb 100644
+--- a/Tests/RunCMake/CommandLineTar/RunCMakeTest.cmake
++++ b/Tests/RunCMake/CommandLineTar/RunCMakeTest.cmake
+@@ -27,7 +27,6 @@ run_cmake(gnutar)
+ run_cmake(gnutar-gz)
+ run_cmake(pax)
+ run_cmake(pax-xz)
+-run_cmake(pax-zstd)
+ run_cmake(paxr)
+ run_cmake(paxr-bz2)
+ run_cmake(zip)

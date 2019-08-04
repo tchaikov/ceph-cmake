@@ -1,0 +1,21 @@
+diff --git a/Source/cmGetPipes.cxx b/Source/cmGetPipes.cxx
+index ad323f7ee6..8137a51b7e 100644
+--- a/Source/cmGetPipes.cxx
++++ b/Source/cmGetPipes.cxx
+@@ -34,14 +34,14 @@ int cmGetPipes(int* fds)
+ int cmGetPipes(int* fds)
+ {
+   if (pipe(fds) == -1) {
+-    return uv_translate_sys_error(errno);
++    return -errno;
+   }
+ 
+   if (fcntl(fds[0], F_SETFD, FD_CLOEXEC) == -1 ||
+       fcntl(fds[1], F_SETFD, FD_CLOEXEC) == -1) {
+     close(fds[0]);
+     close(fds[1]);
+-    return uv_translate_sys_error(errno);
++    return -errno;
+   }
+   return 0;
+ }

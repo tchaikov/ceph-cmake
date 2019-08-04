@@ -1,0 +1,13 @@
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index 75ac8bfac5..b1f7268928 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -562,7 +562,7 @@ macro (CMAKE_BUILD_UTILITIES)
+   #---------------------------------------------------------------------
+   # Build libuv library.
+   if(CMAKE_USE_SYSTEM_LIBUV)
+-    find_package(LibUV 1.10.0)
++    find_package(LibUV 1.8.0)
+     if(NOT LIBUV_FOUND)
+       message(FATAL_ERROR
+         "CMAKE_USE_SYSTEM_LIBUV is ON but a libuv is not found!")
